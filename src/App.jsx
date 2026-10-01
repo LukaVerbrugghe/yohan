@@ -11,6 +11,26 @@ function App() {
   const [revealedNotes, setRevealedNotes] = useState({})
   const [missYouCount, setMissYouCount] = useState(0)
 
+  const sendDiscordNotification = async () => {
+    const webhookUrl = 'https://discord.com/api/webhooks/1555232256400957471/nfv8E6bPBI22e9UKk1TAHJQ61mT1oGL1Nf8z-JJIR-685ArRomx4OE2d77lXNK3mH2AI' // Replace this with your actual webhook URL
+
+    try {
+      await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          content: '🎉💕 HE SAID YES! 💕🎉\n\nYohan clicked the Yes button! He wants to give us another try!',
+          username: 'Love Notification',
+          avatar_url: 'https://emoji.gg/assets/emoji/3814_pink-heart.png'
+        })
+      })
+    } catch (error) {
+      console.error('Failed to send Discord notification:', error)
+    }
+  }
+
   const timelineEvents = [
     { date: "Add Date 1", title: "Event Title", description: "Description of what happened" },
     { date: "Add Date 2", title: "Event Title", description: "Description of what happened" },
@@ -56,6 +76,7 @@ function App() {
 
   const handleYesClick = () => {
     setShowSuccess(true)
+    sendDiscordNotification()
   }
 
   const handleNoHover = () => {
