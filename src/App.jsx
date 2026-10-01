@@ -228,8 +228,8 @@ function App() {
               { title: "You are loved", detail: "Deeply, genuinely, unconditionally loved. Not for what you do or what you can give, but for who you are." },
               { title: "You are allowed to need space", detail: "It's okay to step back. It's okay to breathe. It's okay to take time for yourself. I'll still be here." },
               { title: "You don't have to earn affection", detail: "You don't need to perform or achieve or be perfect. You deserve love simply because you exist." },
-              { title: "Your weird little interests make you you", detail: "Pokémon, the things no one else gets, the specific things that light you up - they're part of what makes you special." },
-              { title: "You made someone's life brighter", detail: "You made my life brighter just by being there. You have no idea how much you matter to people." }
+              { title: "Your weird little interests make you you", detail: "Pokémon, the animes, the specific things that light you up, they're part of what makes you special." },
+              { title: "You made someone's life brighter", detail: "You made my life brighter just by being there. You have no idea how much you matter to people. You really are my angel." }
             ].map((item, index) => (
               <div key={index} className="bg-gradient-to-r from-soft-pink/30 to-soft-rose/30 rounded-2xl p-4 md:p-6 transform hover:scale-105 transition-transform">
                 <h3 className="text-lg md:text-xl font-semibold text-pink-700 mb-2">{item.title}</h3>
@@ -298,8 +298,9 @@ function App() {
               <li>✨ Always laugh at your jokes (even the bad ones)</li>
               <li>🦆 Never forget that Psyduck is the best</li>
               <li>🎮 Let you win at least ONE Pokémon battle per year</li>
-              <li>🤗 Be your biggest fan and your best friend</li>
+              <li>🤗 Be your biggest fan</li>
               <li>💝 Love you for exactly who you are</li>
+              <li>🤗 Did I mention how much we would cuddle?</li>
             </ul>
           </div>
         </section>
@@ -310,7 +311,7 @@ function App() {
           <div className="space-y-4">
             <div className="bg-soft-pink/30 rounded-2xl p-4 md:p-6">
               <p className="text-pink-700 text-base md:text-lg font-serif leading-relaxed">
-                I miss the way your voice sounds when you're tired but still want to talk to me. The way you'd pretend to be annoyed but I could hear you smiling.
+                I miss the way your voice sounds when you're tired but still want to talk to me. 
               </p>
             </div>
             <div className="bg-soft-rose/30 rounded-2xl p-4 md:p-6">
@@ -325,7 +326,7 @@ function App() {
             </div>
             <div className="bg-gradient-to-r from-soft-pink/40 to-soft-rose/40 rounded-2xl p-4 md:p-6 border-2 border-pink-400">
               <p className="text-pink-700 text-base md:text-lg font-serif leading-relaxed">
-                Most of all, I miss the excitement of hugging my angel. The feeling of finally being in your arms after missing you for so long. That moment where everything else disappears and it's just us. I miss that more than anything.
+                Most of all, I miss the anticipation of hugging my angel. The feeling of finally being in your arms after missing you for so long. 
               </p>
             </div>
             <div className="bg-soft-blue/30 rounded-2xl p-4 md:p-6">
