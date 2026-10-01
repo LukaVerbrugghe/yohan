@@ -976,7 +976,7 @@ function App() {
         <p className="text-base md:text-lg font-serif">Made with 💕 just for you</p>
         {/* copyright */}
         <p className="text-sm md:text-base text-pink-500 mt-2">
-          © 2025 <a href="https://lukaverbrugghe.github.io/luka-verbrugghe-io/" target="_blank" rel="noopener noreferrer">Luka Verbrugghe</a> & Yohan. All rights reserved.
+          © 2026 <a href="https://lukaverbrugghe.github.io/luka-verbrugghe-io/" target="_blank" rel="noopener noreferrer">Luka Verbrugghe</a> & Yohan. All rights reserved.
         </p>
       </footer>
         </>
