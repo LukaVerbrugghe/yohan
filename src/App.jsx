@@ -713,32 +713,57 @@ function App() {
                   setLetterAnimating(true)
                   setTimeout(() => setLetterOpen(true), 500)
                 }}
-                className="relative cursor-pointer transform hover:scale-105 transition-transform duration-300"
+                className="relative cursor-pointer transform hover:scale-102 transition-transform duration-300 w-full"
               >
                 {/* Envelope */}
-                <div className="bg-gradient-to-br from-pink-200 to-rose-300 rounded-lg shadow-2xl p-4 md:p-6 relative overflow-hidden">
+                <div className="bg-gradient-to-br from-pink-100 to-rose-200 rounded-2xl shadow-2xl p-6 md:p-8 relative overflow-hidden min-h-[400px] md:min-h-[500px] border-4 border-pink-300">
+                  
+                  {/* Return address */}
+                  <div className="absolute top-4 left-4 md:top-6 md:left-6 text-left">
+                    <p className="text-pink-700 font-serif text-xs md:text-sm">From: With all my love 💕</p>
+                    <p className="text-pink-600 font-serif text-xs md:text-sm mt-1">Your heart</p>
+                  </div>
+
+                  {/* Stamp */}
+                  <div className="absolute top-4 right-4 md:top-6 md:right-6 bg-gradient-to-br from-red-300 to-red-400 rounded p-2 md:p-3 border-2 border-red-500 shadow-md">
+                    <span className="text-2xl md:text-3xl">💌</span>
+                  </div>
+
+                  {/* Recipient address */}
+                  <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 text-center w-full px-4">
+                    <p className="text-pink-800 font-serif text-sm md:text-base font-semibold">To:</p>
+                    <p className="text-pink-700 font-serif text-lg md:text-2xl font-bold mt-1">Yohan</p>
+                    <p className="text-pink-600 font-serif text-xs md:text-sm mt-1">My beautiful sweet boy</p>
+                  </div>
+
                   {/* Envelope flap */}
-                  <div className="absolute top-0 left-0 right-0 h-32 md:h-40 bg-gradient-to-br from-pink-300 to-rose-400 transform origin-top transition-transform duration-700"
+                  <div className="absolute top-0 left-0 right-0 h-40 md:h-48 bg-gradient-to-br from-pink-300 to-rose-400 transform origin-top transition-transform duration-700"
                        style={{ clipPath: 'polygon(0 0, 50% 100%, 100% 0)' }}>
                   </div>
                   
                   {/* Heart seal */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl md:text-8xl float-animation">
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-7xl md:text-9xl float-animation">
                     💕
                   </div>
                   
-                  {/* Click instruction */}
-                  <div className="absolute bottom-4 left-0 right-0 text-center">
-                    <p className="text-pink-700 font-serif text-sm md:text-base animate-pulse">
-                      Click to open 💌
+                  {/* Click instruction - very prominent */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-pink-600 to-pink-500 pt-10 pb-6 rounded-b-2xl">
+                    <p className="text-white font-serif text-xl md:text-3xl font-bold animate-bounce">
+                      👇 TAP TO OPEN 👇
                     </p>
+                    <p className="text-pink-100 font-serif text-sm md:text-base mt-2">
+                      A letter from my heart to yours
+                    </p>
+                    <div className="text-3xl md:text-4xl mt-3 animate-pulse">
+                      💌
+                    </div>
                   </div>
 
                   {/* Decorative corners */}
-                  <div className="absolute top-2 left-2 text-2xl">🌸</div>
-                  <div className="absolute top-2 right-2 text-2xl">🌸</div>
-                  <div className="absolute bottom-2 left-2 text-2xl">🌸</div>
-                  <div className="absolute bottom-2 right-2 text-2xl">🌸</div>
+                  <div className="absolute top-3 left-3 text-xl md:text-2xl">🌸</div>
+                  <div className="absolute top-3 right-3 text-xl md:text-2xl">🌸</div>
+                  <div className="absolute bottom-24 left-3 text-xl md:text-2xl">🌸</div>
+                  <div className="absolute bottom-24 right-3 text-xl md:text-2xl">🌸</div>
                 </div>
               </div>
             ) : (
