@@ -409,7 +409,7 @@ function App() {
             {[
               { id: 1, message: "You're my favorite person 💕" },
               { id: 2, message: "I still check your profile sometimes 😊" },
-              { id: 3, message: "Your laugh is my favorite sound" },
+              { id: 3, message: "Your voice is my favorite sound" },
               { id: 4, message: "I never stopped caring" },
               { id: 5, message: "You make me want to be better" },
               { id: 6, message: "Psyduck approves 🦆" },
@@ -434,7 +434,7 @@ function App() {
                   {[
                     "You're my favorite person 💕",
                     "I still check your profile sometimes 😊",
-                    "Your laugh is my favorite sound",
+                    "Your voice is my favorite sound",
                     "I never stopped caring",
                     "You make me want to be better",
                     "Psyduck approves 🦆",
@@ -449,7 +449,7 @@ function App() {
           </div>
         </section>
 
-        {/* Songs Section */}
+        {/* Songs Section
         <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4 md:mb-6 text-center">🎵 Songs That Remind Me of You 🎵</h2>
           <div className="space-y-3">
@@ -468,7 +468,7 @@ function App() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Our Inside Jokes */}
         <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
@@ -519,7 +519,7 @@ function App() {
           </div>
         </section>
 
-        {/* The Cheating Scale */}
+        {/* The Cheating Scale
         <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4 md:mb-6 text-center">📊 The Cheating Scale 📊</h2>
           <p className="text-pink-600 text-center mb-6 font-serif italic">A scientific analysis of your Pokémon battle 'skills'</p>
@@ -547,7 +547,7 @@ function App() {
           <div className="mt-6 text-center">
             <p className="text-pink-500 text-sm font-serif italic">Current level: 100% (surprise, surprise) 😏</p>
           </div>
-        </section>
+        </section> */}
 
         {/* Cuddle Wishlist */}
         <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
@@ -576,12 +576,12 @@ function App() {
           <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4 md:mb-6 text-center">📚 Things I Learned From You 📚</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { lesson: "Patience", detail: "Especially when you're being impossible ;)" },
+              { lesson: "Chocolatine", detail: "Never pain au chocolat. Ever. ;)" },
               { lesson: "Communication", detail: "Even when it's hard, it's worth it" },
               { lesson: "Kindness", detail: "You show it to everyone, even when you don't have to" },
               { lesson: "Strength", detail: "You're stronger than you think" },
-              { lesson: "Laughter", detail: "Life is better when we laugh together" },
-              { lesson: "Love", detail: "Real love isn't perfect, but it's always worth fighting for" }
+              { lesson: "Emotions", detail: "You showed me it was okay to show I'm scared" },
+              { lesson: "Love", detail: "Real love isn't perfect, but it's always worth fighting for. You showed me how deeply I could love" }
             ].map((item, index) => (
               <div key={index} className="bg-soft-lavender/30 rounded-2xl p-4 md:p-6 transform hover:scale-105 transition-transform">
                 <h3 className="text-lg md:text-xl font-semibold text-pink-700 mb-2">{item.lesson}</h3>
@@ -598,19 +598,23 @@ function App() {
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <span className="text-2xl">🌅</span>
-                <p className="text-pink-700 text-sm md:text-base font-serif">Wake up next to each other (no alarms needed)</p>
+                <p className="text-pink-700 text-sm md:text-base font-serif">Wake up next to each other. No alarm. No distance. </p>
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-2xl">☕</span>
-                <p className="text-pink-700 text-sm md:text-base font-serif">Slow morning with coffee/tea and cuddles</p>
+                <p className="text-pink-700 text-sm md:text-base font-serif">Slow morning with coffee/tea and cuddles. I WILL make pudding.</p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-2xl">🎮</span>
-                <p className="text-pink-700 text-sm md:text-base font-serif">Play Pokémon together (I'll let you win once, promise)</p>
+                <span className="text-2xl">🚶</span>
+                <p className="text-pink-700 text-sm md:text-base font-serif">Walk through the city holding hands</p>
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-2xl">🍕</span>
-                <p className="text-pink-700 text-sm md:text-base font-serif">Cook something together (or order pizza, let's be real)</p>
+                <p className="text-pink-700 text-sm md:text-base font-serif">Cook something together (or order pizza)</p>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="text-2xl">🎮</span>
+                <p className="text-pink-700 text-sm md:text-base font-serif">Watch a film. Play Pokemon. Cuddle. CUDDLE.</p>
               </div>
               <div className="flex items-start gap-4">
                 <span className="text-2xl">🌙</span>
@@ -623,7 +627,7 @@ function App() {
           </div>
         </section>
 
-        {/* Sticker Tolerance Meter */}
+        {/* Sticker Tolerance Meter
         <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4 md:mb-6 text-center">🤫 Sticker Tolerance Meter 🤫</h2>
           <p className="text-pink-600 text-center mb-6 font-serif italic">How much I can handle The Sticker™</p>
@@ -668,7 +672,7 @@ function App() {
               Current status: Low tolerance (but working on it... maybe) 🙄
             </p>
           </div>
-        </section>
+        </section> */}
 
         {/* You in Tiny Details */}
         <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
@@ -681,7 +685,7 @@ function App() {
               { emoji: "🌙", detail: "No sleep schedule" },
               { emoji: "🗣️", detail: "The accent" },
               { emoji: "📸", detail: "Cute selfies" },
-              { emoji: "🍝", detail: "Ravioli" },
+              { emoji: "🕊️", detail: "Pigeon army" },
               { emoji: "💕", detail: "Everything that makes you you" }
             ].map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-soft-pink/30 to-soft-rose/30 rounded-2xl p-4 text-center transform hover:scale-105 transition-transform">
@@ -771,47 +775,127 @@ function App() {
                   {/* Content */}
                   <div className="relative z-10">
                     <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-6 text-center font-serif">
-                      Dear Yohan 💕
+                      Yohan,
                     </h2>
                     
                     <div className="text-pink-700 text-base md:text-lg leading-relaxed font-serif space-y-4">
                       <p className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                        I've been thinking about us a lot lately. About everything we shared, everything we learned, and all the little moments that made you such an important part of my life.
+                        I don't really know how to write this without making it sound like I'm trying to convince you of something.
                       </p>
                       
                       <p className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                        I still believe in what we had. I still believe that the love between us was real, and I still believe that some of the things that hurt us could have been talked through and worked on together.
+                        Maybe I am a little.
                       </p>
                       
                       <p className="animate-fade-in" style={{ animationDelay: '0.9s' }}>
-                        I'm not pretending that everything was perfect. It wasn't. We both struggled, we misunderstood each other, and the distance made things harder than they ever should have been. But when I look at everything we had, I don't only see the things that went wrong.
+                        But mostly, I just want you to know what you meant to me.
                       </p>
                       
                       <p className="animate-fade-in" style={{ animationDelay: '1.2s' }}>
-                        I see the boy I fell in love with. I see the Pokémon date, the late-night talks, the stupid jokes, the nervous calls, and all the moments where simply having you there made my day better.
+                        I don't think I'll ever forget how something as stupid as arguing about whether it's chocolatine or pain au chocolat could become an actual part of our relationship. Or Ratatouille in Leuven. Or frogs, Pokémon, stickers, ravioli, your cute French accent and all the other completely random things that somehow became you.
                       </p>
                       
                       <p className="animate-fade-in" style={{ animationDelay: '1.5s' }}>
-                        I don't know what the future looks like. I don't know where life will take either of us. But I know that I don't want to pretend that what we had didn't matter to me.
+                        I don't think I fell in love with one big thing about you.
                       </p>
                       
                       <p className="animate-fade-in" style={{ animationDelay: '1.8s' }}>
-                        If there is ever a moment when we are both in the same place in life, without the distance between us, and we still feel the same way, I would want to see where that could take us.
+                        I fell in love with hundreds of tiny things.
                       </p>
                       
                       <p className="animate-fade-in" style={{ animationDelay: '2.1s' }}>
-                        Until then, I just hope you know how deeply loved you are. Not because you're my boyfriend, not because of what you can give me, but because you're Yohan.
+                        The way you get excited about things other people might overlook. The way you talk about things you care about. Your stupid jokes. Your selfies. Your weird little habits. The way you care for every living being.
                       </p>
                       
-                      <p className="animate-fade-in text-center text-xl md:text-2xl mt-6" style={{ animationDelay: '2.4s' }}>
-                        And yes, I still think we would have made excellent cuddle buddies. 💕
+                      <p className="animate-fade-in" style={{ animationDelay: '2.4s' }}>
+                        And somehow, somewhere between all those little things, you became home to me.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '2.7s' }}>
+                        I know what you decided.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '3.0s' }}>
+                        I know you don't want to live in a long-distance relationship for years. I know you don't want to wait for a future that neither of us can guarantee. And I know that you didn't make this decision because you suddenly stopped caring about me.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '3.3s' }}>
+                        I believe you when you say that.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '3.6s' }}>
+                        What I don't agree with is that the only possible answer to our problems is to stop being us.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '3.9s' }}>
+                        If something in our relationship hurts, I want to talk about it. I want to understand it. I want to try things differently. I want us to have the chance to actually see what we can build when we both know what the problems are.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '4.2s' }}>
+                        Maybe that still wouldn't work.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '4.5s' }}>
+                        I can't promise that it would.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '4.8s' }}>
+                        But I know that if I never tried, I would always wonder.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '5.1s' }}>
+                        So yes, I'm still here. I'm still hoping. I'm still loving you. And I believe we can figure this out together.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '5.4s' }}>
+                        And I'm not asking you to promise me anything.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '5.7s' }}>
+                        I just know that I loved what we had.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '6.0s' }}>
+                        I loved the stupid jokes and the serious conversations. I loved our little rituals. I loved planning things that were still months away. I loved imagining a completely ordinary day with you: waking up next to you, arguing about breakfast, going somewhere for no reason, cooking together, watching something stupid, cuddling until one of us falls asleep.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '6.3s' }}>
+                        Nothing spectacular.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '6.6s' }}>
+                        Just you.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '6.9s' }}>
+                        Just us.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '7.2s' }}>
+                        That's what I wanted.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '7.5s' }}>
+                        And that's what I'll remember.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '7.8s' }}>
+                        Whatever happens from here, I hope you never doubt that you were deeply, genuinely loved.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '8.1s' }}>
+                        And I hope you always know that. And whenever you're ready to give this another shot and work on this with me, just click the button.
+                      </p>
+                      
+                      <p className="animate-fade-in text-center text-xl md:text-2xl mt-6" style={{ animationDelay: '8.4s' }}>
+                        I love you, my beautiful sweet boy.
                       </p>
                     </div>
 
                     {/* Signature */}
-                    <div className="mt-8 text-right animate-fade-in" style={{ animationDelay: '2.7s' }}>
+                    <div className="mt-8 text-right animate-fade-in" style={{ animationDelay: '8.7s' }}>
                       <p className="text-pink-700 font-serif text-lg md:text-xl italic">
-                        With all my love 💕
+                        💕
                       </p>
                     </div>
                   </div>
@@ -905,6 +989,10 @@ function App() {
       {/* Footer */}
       <footer className="text-center py-6 md:py-8 text-pink-600">
         <p className="text-base md:text-lg font-serif">Made with 💕 just for you</p>
+        {/* copyright */}
+        <p className="text-sm md:text-base text-pink-500 mt-2">
+          © 2025 <a href="https://lukaverbrugghe.github.io/luka-verbrugghe-io/" target="_blank" rel="noopener noreferrer">Luka Verbrugghe</a> & Yohan. All rights reserved.
+        </p>
       </footer>
         </>
       )}
