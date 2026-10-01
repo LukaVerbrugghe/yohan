@@ -10,6 +10,8 @@ function App() {
   const [noMessage, setNoMessage] = useState('')
   const [revealedNotes, setRevealedNotes] = useState({})
   const [missYouCount, setMissYouCount] = useState(0)
+  const [letterOpen, setLetterOpen] = useState(false)
+  const [letterAnimating, setLetterAnimating] = useState(false)
 
   const sendDiscordNotification = async () => {
     const webhookUrl = 'https://discord.com/api/webhooks/1555232256400957471/nfv8E6bPBI22e9UKk1TAHJQ61mT1oGL1Nf8z-JJIR-685ArRomx4OE2d77lXNK3mH2AI' // Replace this with your actual webhook URL
@@ -215,45 +217,6 @@ function App() {
               <h3 className="text-lg md:text-xl font-semibold text-pink-700 mb-2">🌟 The Magic Moments</h3>
               <p className="text-sm md:text-base text-pink-600">The moments that felt like magic. When everything aligned and it was just us, being us, and nothing else mattered. Those moments I'll carry with me always.</p>
             </div>
-          </div>
-        </section>
-
-        {/* Letter Section */}
-        <section className="bg-warm-white/80 backdrop-blur-sm rounded-3xl p-6 md:p-8 mb-6 md:mb-8 shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4 md:mb-6 text-center">💌 A Note For You 💌</h2>
-          <div className="bg-soft-pink/20 rounded-2xl p-4 md:p-6">
-            <p className="text-pink-700 text-base md:text-lg leading-relaxed font-serif">
-                  I've been thinking about us a lot lately. About everything we shared,
-        everything we learned, and all the little moments that made you such
-        an important part of my life.
-        <br /><br />
-        I still believe in what we had. I still believe that the love between
-        us was real, and I still believe that some of the things that hurt us
-        could have been talked through and worked on together.
-        <br /><br />
-        I'm not pretending that everything was perfect. It wasn't. We both
-        struggled, we misunderstood each other, and the distance made things
-        harder than they ever should have been. But when I look at everything
-        we had, I don't only see the things that went wrong. I see the boy I
-        fell in love with. I see the Pokémon date, the late-night talks, the
-        stupid jokes, the nervous calls, and all the moments where simply
-        having you there made my day better.
-        <br /><br />
-        I don't know what the future looks like. I don't know where life will
-        take either of us. But I know that I don't want to pretend that what
-        we had didn't matter to me.
-        <br /><br />
-        If there is ever a moment when we are both in the same place in life,
-        without the distance between us, and we still feel the same way, I
-        would want to see where that could take us.
-        <br /><br />
-        Until then, I just hope you know how deeply loved you are. Not because
-        you're my boyfriend, not because of what you can give me, but because
-        you're Yohan.
-        <br /><br />
-        And yes, I still think we would have made excellent cuddle buddies.
-        💕
-            </p>
           </div>
         </section>
 
@@ -747,6 +710,131 @@ function App() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Animated Letter Section */}
+        <section className="mb-6 md:mb-8">
+          <div className="max-w-2xl mx-auto">
+            {!letterOpen ? (
+              // Closed Envelope
+              <div 
+                onClick={() => {
+                  setLetterAnimating(true)
+                  setTimeout(() => setLetterOpen(true), 500)
+                }}
+                className="relative cursor-pointer transform hover:scale-105 transition-transform duration-300"
+              >
+                {/* Envelope */}
+                <div className="bg-gradient-to-br from-pink-200 to-rose-300 rounded-lg shadow-2xl p-4 md:p-6 relative overflow-hidden">
+                  {/* Envelope flap */}
+                  <div className="absolute top-0 left-0 right-0 h-32 md:h-40 bg-gradient-to-br from-pink-300 to-rose-400 transform origin-top transition-transform duration-700"
+                       style={{ clipPath: 'polygon(0 0, 50% 100%, 100% 0)' }}>
+                  </div>
+                  
+                  {/* Heart seal */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-6xl md:text-8xl float-animation">
+                    💕
+                  </div>
+                  
+                  {/* Click instruction */}
+                  <div className="absolute bottom-4 left-0 right-0 text-center">
+                    <p className="text-pink-700 font-serif text-sm md:text-base animate-pulse">
+                      Click to open 💌
+                    </p>
+                  </div>
+
+                  {/* Decorative corners */}
+                  <div className="absolute top-2 left-2 text-2xl">🌸</div>
+                  <div className="absolute top-2 right-2 text-2xl">🌸</div>
+                  <div className="absolute bottom-2 left-2 text-2xl">🌸</div>
+                  <div className="absolute bottom-2 right-2 text-2xl">🌸</div>
+                </div>
+              </div>
+            ) : (
+              // Open Letter
+              <div className="relative">
+                {/* Paper */}
+                <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-lg shadow-2xl p-6 md:p-8 relative overflow-hidden transform transition-all duration-1000"
+                     style={{ animation: 'unfold 1s ease-out' }}>
+                  
+                  {/* Paper texture overlay */}
+                  <div className="absolute inset-0 opacity-10 pointer-events-none"
+                       style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, #000 2px, #000 3px)' }}>
+                  </div>
+
+                  {/* Decorative border */}
+                  <div className="absolute inset-2 border-2 border-pink-300 rounded pointer-events-none"></div>
+                  <div className="absolute inset-4 border border-pink-200 rounded pointer-events-none"></div>
+
+                  {/* Content */}
+                  <div className="relative z-10">
+                    <h2 className="text-2xl md:text-3xl font-bold text-pink-800 mb-6 text-center font-serif">
+                      Dear Yohan 💕
+                    </h2>
+                    
+                    <div className="text-pink-700 text-base md:text-lg leading-relaxed font-serif space-y-4">
+                      <p className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                        I've been thinking about us a lot lately. About everything we shared, everything we learned, and all the little moments that made you such an important part of my life.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                        I still believe in what we had. I still believe that the love between us was real, and I still believe that some of the things that hurt us could have been talked through and worked on together.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '0.9s' }}>
+                        I'm not pretending that everything was perfect. It wasn't. We both struggled, we misunderstood each other, and the distance made things harder than they ever should have been. But when I look at everything we had, I don't only see the things that went wrong.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '1.2s' }}>
+                        I see the boy I fell in love with. I see the Pokémon date, the late-night talks, the stupid jokes, the nervous calls, and all the moments where simply having you there made my day better.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '1.5s' }}>
+                        I don't know what the future looks like. I don't know where life will take either of us. But I know that I don't want to pretend that what we had didn't matter to me.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '1.8s' }}>
+                        If there is ever a moment when we are both in the same place in life, without the distance between us, and we still feel the same way, I would want to see where that could take us.
+                      </p>
+                      
+                      <p className="animate-fade-in" style={{ animationDelay: '2.1s' }}>
+                        Until then, I just hope you know how deeply loved you are. Not because you're my boyfriend, not because of what you can give me, but because you're Yohan.
+                      </p>
+                      
+                      <p className="animate-fade-in text-center text-xl md:text-2xl mt-6" style={{ animationDelay: '2.4s' }}>
+                        And yes, I still think we would have made excellent cuddle buddies. 💕
+                      </p>
+                    </div>
+
+                    {/* Signature */}
+                    <div className="mt-8 text-right animate-fade-in" style={{ animationDelay: '2.7s' }}>
+                      <p className="text-pink-700 font-serif text-lg md:text-xl italic">
+                        With all my love 💕
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Floating hearts */}
+                  <div className="absolute top-4 left-4 text-2xl float-animation" style={{ animationDelay: '0s' }}>💕</div>
+                  <div className="absolute top-8 right-8 text-xl float-animation" style={{ animationDelay: '0.5s' }}>💗</div>
+                  <div className="absolute bottom-12 left-8 text-2xl float-animation" style={{ animationDelay: '1s' }}>💖</div>
+                  <div className="absolute bottom-8 right-12 text-xl float-animation" style={{ animationDelay: '1.5s' }}>💝</div>
+                  <div className="absolute top-1/3 left-6 text-lg float-animation" style={{ animationDelay: '2s' }}>💕</div>
+                  <div className="absolute top-1/2 right-6 text-lg float-animation" style={{ animationDelay: '2.5s' }}>💗</div>
+                </div>
+
+                {/* Close button */}
+                <div className="text-center mt-4">
+                  <button
+                    onClick={() => setLetterOpen(false)}
+                    className="text-pink-600 hover:text-pink-800 font-serif text-sm md:text-base underline"
+                  >
+                    Close letter ✉️
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
