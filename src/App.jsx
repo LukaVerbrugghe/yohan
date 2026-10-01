@@ -32,11 +32,12 @@ function App() {
   }
 
   const timelineEvents = [
-    { date: "Add Date 1", title: "Event Title", description: "Description of what happened" },
-    { date: "Add Date 2", title: "Event Title", description: "Description of what happened" },
-    { date: "Add Date 3", title: "Event Title", description: "Description of what happened" },
-    { date: "Add Date 4", title: "Event Title", description: "Description of what happened" },
-    { date: "Add Date 5", title: "Event Title", description: "Description of what happened" }
+    { date: "First of May", title: "First meeting", description: "Gabriel introduced us to each other in a tiktok group chat, you were so enthousiastic" },
+    { date: "End of June", title: "First I love you", description: "You told me you loved me on tiktok" },
+    { date: "End of July", title: "You told me you wanted to try", description: "I was extremely confused, but soooo happy" },
+    { date: "Begin September", title: "Stronger and better", description: "We got back together after being stupid and we loved each other so much" },
+    { date: "3th of September", title: "First call", description: "I was soooo nerveous and I felt like I fucked it up so bad but I remember how pretty you looked" },
+    { date: "First of November", title: "Planned first visit", description: "I looked forward to it so much, I still hope I get to hug my love one day" },
   ]
 
   const authQuestions = [
@@ -204,7 +205,7 @@ function App() {
             </div>
             <div className="bg-soft-rose/30 rounded-2xl p-4 md:p-6 transform hover:scale-105 transition-transform">
               <h3 className="text-lg md:text-xl font-semibold text-pink-700 mb-2">📸 Things You Forgot</h3>
-              <p className="text-sm md:text-base text-pink-600">All those little moments you probably don't even remember. The way you'd say my name. The specific things that made you laugh. The tiny details I noticed and saved in my heart like they were precious.</p>
+              <p className="text-sm md:text-base text-pink-600">All those little moments you probably don't even remember. The way you'd say my name wrong. The specific strategy you talked about. The tiny details I noticed and saved in my heart like they were precious.</p>
             </div>
             <div className="bg-soft-lavender/30 rounded-2xl p-4 md:p-6 transform hover:scale-105 transition-transform">
               <h3 className="text-lg md:text-xl font-semibold text-pink-700 mb-2">📱 If I Could Replay One Evening</h3>
