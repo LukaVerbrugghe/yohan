@@ -486,21 +486,6 @@ function App() {
                 explanation: "Your completely fair and honest way of winning Pokémon battles. Totally not cheating. Just... strategic advantages. That you definitely didn't manipulate. (You absolutely did)"
               },
               { 
-                emoji: "🤫", 
-                title: "The Sticker Situation", 
-                explanation: "That one sticker you use that I hate. We don't talk about it. You use it anyway. I complain. You keep using it. It's a whole thing. A very annoying thing."
-              },
-              { 
-                emoji: "😴", 
-                title: "Time Dilation", 
-                explanation: "When '5 more minutes' somehow transforms into 2 hours. Physics breaks down in our conversations. Time is a construct. Sleep is optional. Talking to you is mandatory."
-              },
-              { 
-                emoji: "🍕", 
-                title: "Pokémon Cuisine", 
-                explanation: "Our groundbreaking discovery that Pokémon themed food is not only real but delicious. Psyduck pancakes? Gourmet. Pikachu pizza? Michelin star worthy. (We're delusional and we love it)"
-              },
-              { 
                 emoji: "💕", 
                 title: "The Secret Language", 
                 explanation: "All the little things, the specific references, the shared moments that only we understand. Our own private world built inside jokes and shared memories."
